@@ -7,12 +7,12 @@ function Products(props) {
     return (
         
             <div key = {product.id} className="card">
-              <a href="product.html">
+              <a href={`/product/${product.id}`}>
          
                 <img className="medium" src={product.image} alt="product" />
               </a>
               <div className="card-body">
-                <a href="product.html">
+                <a href={`/product/${product.id}`}>
                   <h2>{product.name}</h2>
                 </a>
                 <Ratings ratings = {product.rating} review = {product.numReviews}/>
